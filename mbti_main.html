@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang=ko>
+  <head>
+  <meta charset="UTF-8" />
+  <title>mbti</title>
+</head>
+<body>
+  <div><center><a href="mbti_intro.html" class="h1">고양이 짤 성격 테스트</a></center></div>
+  <div class=qu><center>Q1. 기운 충전하는 방법</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q1" value="0"><span>집에서 누워서</span></label>
+  <label class="box-radio-input"><input type="radio" name="q1" value="1"><span>밖에서 사람들 만나면서</span></label></center></div>
+  <div class=qu><center>Q2. 너랑 나랑 안 맞는다는 얘기를 들었을 때</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q2" value="0"><span>마상...ㅜ</span></label>
+  <label class="box-radio-input"><input type="radio" name="q2" value="1"><span>왜? 이유가 뭔데??</span></label></center></div>
+  <div class=qu><center>Q3. 친구들과 여행을 떠날 때</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q3" value="0"><span>계획은 내가 새워야해</span></label>
+  <label class="box-radio-input"><input type="radio" name="q3" value="1"><span>누군가 계획을 세워 주겠지</span></label></center></div>
+  <div class=qu><center>Q4. 내가 중요시 하는 것은?</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q4" value="0"><span>지금 이 순간</span></label>
+  <label class="box-radio-input"><input type="radio" name="q4" value="1"><span>앞으로 겪을 일들</span></label></center></div>
+  <div class=qu><center>Q5. 딱히 관심없는 사람을 위로할 때 </center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q5" value="1"><span>"아 정말로? 그랬구나~~"영혼없는 리액션</span></label>
+  <label class="box-radio-input"><input type="radio" name="q5" value="0"><span>그냥 공감없이 질문만 계속한다</span></label></center></div>
+  <div class=qu><center>Q6. 이 테스트를 하고있는 지금 나는</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q6" value="1"><span>솔직히 이런거 잘 안믿는다</span></label>
+  <label class="box-radio-input"><input type="radio" name="q6" value="0"><span>과학적인 테스트인거 같다</span></label></center></div>
+  <div class=qu><center>Q7. 과제를 처을 시작할 때</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q7" value="0"><span>"뭘 먼저 시작해야 할까?"라며 계획을 세운다</span></label>
+  <label class="box-radio-input"><input type="radio" name="q7" value="1"><span>일단 자료조사부터 시작하고 큰 틀을 잡아본다</span></label></center></div>
+  <div class=qu><center>Q8. 무언가를 설명하고 싶을 때</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q8" value="1"><span>말로 표현하는 게 좋다</span></label>
+  <label class="box-radio-input"><input type="radio" name="q8" value="0"><span>글로 표현하는 게 더 편하다</span></label></center></div>
+  <div class=qu><center>Q9. 과제가 끝났을 때 내가 듣고싶은 말</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q9" value="1"><span>오 잘했네. 근데 이 부분은 수정하는게 좋을 듯?</span></label>
+  <label class="box-radio-input"><input type="radio" name="q9" value="0"><span>수고했어~~ 진짜 열심히 했나보다</span></label></center></div>
+  <div class=qu><center>Q10. "아 벌써 약속시간 얼마 안남았네. 갈 준비는 해야 하는데 귀찮다 ㅠㅠ"</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q10" value="1"><span>라는 걱정을 약속 시간 몇 분 전에 한다</span></label>
+  <label class="box-radio-input"><input type="radio" name="q10" value="0"><span>라는 걱정을 약속 시간 몇 시간 전에 한다</span></label></center></div>
+  <div class=qu><center>Q11. 무언가를 배울 때</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q11" value="1"><span>일단 경험해 보고 이해를 하는 것이 더 좋다</span></label>
+  <label class="box-radio-input"><input type="radio" name="q11" value="0"><span>일단 이해를 한 다음 경험을 하는 것이 더 좋다</span></label></center></div>
+  <div class=qu><center>Q12. 하루 일과를 마치고 집으로 돌아갈 때</center></div>
+  <div><center><label class="box-radio-input"><input type="radio" name="q12" value="1"><span>항상 같은 길로만 다닌다</span></label>
+  <label class="box-radio-input"><input type="radio" name="q12" value="0"><span>새로운 길을 가보는 걸 좋아한다</span></label> 
+  <br>
+  <button class=btn value="rrrr" onclick="qu1();qu2();qu3();qu4();rrrr();reset()">결과 확인하기</button>
+  <style>
+    @font-face {
+    font-family: 'HSSaemaul-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.h1{
+        font-family: 'HSSaemaul-Regular';
+        font-size: 50px;
+        text-decoration: none; 
+  color: #000;
+}
+    .box-radio-input input[type="radio"]{
+  display:none;
+}
+.qu {
+  margin-top:30px; font-size:30px; font-family: 'HSSaemaul-Regular';
+}
+
+.box-radio-input input[type="radio"] + span{
+  display:inline-block;
+  background:none;
+  border:1px solid #23a3a7;  
+  padding:0px 10px;
+  text-align:center;
+  height:50px;
+  width: 400px;
+  line-height:33px;
+  cursor:pointer;
+  margin:3px;
+  font-family: 'HSSaemaul-Regular';
+  line-height:50px;
+  font-size:20px;
+  
+}
+
+.box-radio-input input[type="radio"]:checked + span{
+  border:1px solid #23a3a7;
+  background:#23a3a7;
+  color:#fff;
+}
+.box-radio-input input[type="radio"]:hover + span{
+    border:1px solid #23a3a7;
+  background:#23a3a7;
+  color:#fff;
+}
+.btn {
+    position: relative;
+    height: 35px;
+    width: 422px;
+    border: 1px solid #23a3a7;
+    display: inline-block; 
+    align-items: center;
+    padding:0px 0px;
+    margin:10px;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    background-color: #fff;
+    font-family: 'HSSaemaul-Regular';
+}
+
+.btn:hover{
+    background: #23a3a7;
+    color:#fff;
+}
+
+  </style>
+  <script>
+  var i_e=0, j_p=0, f_t=0, n_s=0;
+  var ie=" ", jp=" ", ft=" ", ns=" ", mbti=" ";
+    function qu1(){
+      var ie1 = document.getElementsByName("q1").length;
+      var ie2 = document.getElementsByName("q8").length;
+      var ie3 = document.getElementsByName("q11").length;
+      var ier = 0;
+    for (var i=0; i<ie1; i++) {
+      if (document.getElementsByName("q1")[i].checked == true) {
+      IE1 = document.getElementsByName("q1")[i].value;
+      i_e = parseInt(i_e) + parseInt(IE1);
+        }
+      }
+    for (var i=0; i<ie2; i++) {
+      if (document.getElementsByName("q8")[i].checked == true) { 
+      IE2 = document.getElementsByName("q8")[i].value;
+      i_e = parseInt(i_e) + parseInt(IE2); 
+        }
+      }
+    for (var i=0; i<ie3; i++) {
+      if (document.getElementsByName("q11")[i].checked == true) { 
+      IE3 = document.getElementsByName("q11")[i].value;
+      i_e = parseInt(i_e) + parseInt(IE3); 
+      if (i_e>1) {
+        ie = "e";
+        } else {
+        ie = "i";
+        }
+        }
+      }
+    return ie;
+    }
+   function qu2(){
+     var ft1 = document.getElementsByName("q2").length;
+     var ft2 = document.getElementsByName("q5").length;
+     var ft3 = document.getElementsByName("q9").length;
+     var ftr = 0;
+   for (var i=0; i<ft1; i++) {
+     if (document.getElementsByName("q2")[i].checked == true) { 
+     FT1 = document.getElementsByName("q2")[i].value;
+     f_t = parseInt(f_t) + parseInt(FT1);
+       }
+     }
+   for (var i=0; i<ft2; i++) {
+     if (document.getElementsByName("q5")[i].checked == true) { 
+     FT2 = document.getElementsByName("q5")[i].value;
+     f_t = parseInt(f_t) + parseInt(FT2);
+     }
+   }
+   for (var i=0; i<ft3; i++) {
+     if (document.getElementsByName("q9")[i].checked == true) { 
+     FT3 = document.getElementsByName("q9")[i].value;
+     f_t = parseInt(f_t) + parseInt(FT3);
+     if (f_t>1) {
+     ft = "t";
+     } else {
+     ft = "f";
+     }
+     }
+   }
+ return ft;
+ }
+ function qu3(){
+   var jp1 = document.getElementsByName("q3").length;
+ var jp2 = document.getElementsByName("q7").length;
+ var jp3 = document.getElementsByName("q10").length;
+ var jpr = 0;
+ for (var i=0; i<jp1; i++) {
+   if (document.getElementsByName("q3")[i].checked == true) { 
+    JP1 = document.getElementsByName("q3")[i].value;
+   j_p = parseInt(j_p) + parseInt(JP1);
+       }
+     }
+ for (var i=0; i<jp2; i++) {
+   if (document.getElementsByName("q7")[i].checked == true) { 
+    JP2 = document.getElementsByName("q7")[i].value;
+   j_p = parseInt(j_p) + parseInt(JP2);
+     }
+   }
+ for (var i=0; i<jp3; i++) {
+   if (document.getElementsByName("q9")[i].checked == true) { 
+    JP3 = document.getElementsByName("q9")[i].value;
+   j_p = parseInt(j_p) + parseInt(JP3);
+   if (j_p>1) {
+     jp = "p";
+     } else {
+     jp = "j";
+     }
+     }
+
+   }
+   return jp;
+ }
+ function qu4(){
+   var ns1 = document.getElementsByName("q4").length;
+ var ns2 = document.getElementsByName("q6").length;
+ var ns3 = document.getElementsByName("q12").length;
+ for (var i=0; i<ns1; i++) {
+   if (document.getElementsByName("q4")[i].checked == true) { 
+    NS1 = document.getElementsByName("q4")[i].value;
+   n_s = parseInt(n_s) + parseInt(NS1);
+       }
+     }
+ for (var i=0; i<ns2; i++) {
+   if (document.getElementsByName("q6")[i].checked == true) { 
+    NS2 = document.getElementsByName("q6")[i].value;
+   n_s = parseInt(n_s) + parseInt(NS2);
+     }
+   }
+ for (var i=0; i<ns3; i++) {
+   if (document.getElementsByName("q12")[i].checked == true) { 
+    NS3 = document.getElementsByName("q12")[i].value;
+   n_s = parseInt(n_s) + parseInt(NS3);
+   if (n_s>1) {
+     ns = "s";
+     } else {
+     ns = "n";
+     }
+     }
+   }
+ return ns;
+ }
+ function rrrr(){
+   mbti = ie+ns+ft+jp;
+
+   if (mbti == 'infj'){
+    location.href = 'infj_page.html';
+  }
+  else if (mbti == 'infp'){
+      location.href = 'infp_page.html';
+  }
+  else if (mbti == 'intj'){
+      location.href ='intj_page.html';
+  }
+  else if (mbti == 'intp'){
+      location.href = 'intp_page.html';
+  }
+  else if (mbti == 'isfj'){
+    location.href = 'isfj_page.html';
+  }
+  else if (mbti == 'isfp'){
+      location.href = 'isfp_page.html';
+  }
+  else if (mbti == 'istj'){
+      location.href ='istj_page.html';
+  }
+  else if (mbti == 'istp'){
+      location.href = 'istp_page.html';
+  }
+  else if (mbti == 'enfj'){
+    location.href = 'enfj_page.html';
+  }
+  else if (mbti == 'enfp'){
+      location.href = 'enfp_page.html';
+  }
+  else if (mbti == 'entj'){
+      location.href ='entj_page.html';
+  }
+  else if (mbti == 'entp'){
+      location.href = 'entp_page.html';
+  }
+  else if (mbti == 'esfj'){
+    location.href = 'esfj_page.html';
+  }
+  else if (mbti == 'esfp'){
+      location.href = 'esfp_page.html';
+  }
+  else if (mbti == 'estj'){
+      location.href ='estj_page.html';
+  }
+  else if (mbti == 'estp'){
+      location.href = 'estp_page.html';
+  }
+  else {
+    alert(mbti);
+  }
+  }
+
+function reset() {
+  var ie=" ", jp=" ", ft=" ", ns=" ", mbti=" ";
+}
+
+  </script>
+</body>
